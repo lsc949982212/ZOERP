@@ -8,18 +8,18 @@ android {
          */
         debug {
             //keystore中key的别名
-            keyAlias 'debug.keystore'
+            keyAlias 'android'
             //keystore中key的密码
-            keyPassword '778744'
+            keyPassword 'lvshenchao'
             //keystore的文件路径，可以是绝对路径也可以是相对路径
-            storeFile file('D:/Android_keystore/debug.keystore.jks')
+            storeFile file('/Users/iris/keystore/store')
             //keystore的密码
-            storePassword '778744'
+            storePassword 'lvshenchao'
         }
 
         //发布版的keystore
         release {
-            storeFile file("D:/Android_keystore/debug.keystore.jks")
+            storeFile file("/Users/iris/Desktop/text.txt")
             //keystore的密码
             storePassword "778744"
             //keystore中key的别名
@@ -29,7 +29,7 @@ android {
         }
     }
 
-    compileSdkVersion 24
+    compileSdkVersion 28
     buildToolsVersion '26.0.2'
 
     aaptOptions {
@@ -40,8 +40,8 @@ android {
 
     defaultConfig {
         applicationId "com.zhongou"
-        minSdkVersion 17
-        targetSdkVersion 24
+        minSdkVersion 19
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
